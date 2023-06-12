@@ -1,0 +1,11 @@
+<!-- app/views/questions/answer.html.erb -->
+
+<h1 class="display-4">Stupido Coaching</h1>
+
+<p class="lead"><%= @question %></p>
+<h3 class="h5">-You</h3>
+
+<p class="lead"><%= @answer %></p>
+<h3 class="h5">-Your coach</h3>
+
+<%= link_to 'Ask another question?', ask_path, class: 'btn btn-primary mt-4' %>
