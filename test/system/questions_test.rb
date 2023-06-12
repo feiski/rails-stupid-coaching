@@ -12,7 +12,7 @@ class QuestionsTest < ApplicationSystemTestCase
     assert_text "I don't care, get dressed and go to work!"
   end
 
-  test "Saying Hello? yields a nice response from the coach" do
+  test "Saying Hello? yields a silly response from the coach" do
     visit ask_url
     fill_in "answer", with: "Hello?"
     click_on "Ask"
@@ -20,7 +20,7 @@ class QuestionsTest < ApplicationSystemTestCase
     assert_text "Silly question, get dressed and go to work!"
   end
 
-  test "Saying I am going to work yiels a nice response from the coach" do
+  test "Saying I am going to work yiels a great response from the coach" do
     visit ask_url
     fill_in "answer", with: "I am going to work"
     click_on "Ask"
